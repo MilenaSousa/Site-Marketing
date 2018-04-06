@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Marketing</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- Slider -->
+	<script type="text/javascript">
+
+		function slide1(){
+			document.getElementById('slide').src="img/um.jpg";
+			setTimeout("slide2()", 4000);
+		}
+
+		function slide2(){
+			document.getElementById('slide').src="img/dois.jpg";
+			setTimeout("slide3()", 4000);
+		}
+
+		function slide3(){
+			document.getElementById('slide').src="img/tres.png";
+			setTimeout("slide1()", 4000);
+		}
+
+	</script>
+
+</head>
+<body onload="slide1()">
+
+	<!--- ***** CABEÇALHO ***** -->
+	<header id="cabeçalho">
+
+		<!-- Menu -->
+		<nav>
+			<ul>
+				<li><a href="#cabeçalho">Home</a></li>
+				<li><a href="#planos">Planos</a></li>
+				<li><a href="#sobre">Sobre</a></li>
+				<li><a href="#contato">Contato</a></li>
+			</ul>
+		</nav>
+
+		<div class="container">
+		<!-- Painel Cabeçalho -->
+			<h1 class="t-top">MARKETING</h1>
+
+			<div id="slideShow">
+				<img id="slide" src="img/um.jpg">
+			</div>
+
+		</div>
+	</header>
+
+
+	<!--- ***** AREA PRINCIPAL ***** -->
+	<div class="container">
+
+		<section class="servico">
+			<h2 class="t-sessao">O Que Nós Oferecemos</h2>
+
+			<div class="opcoes">
+				<div id="caixa1" class="caixa-servicos">
+					<h3>Design</h3>
+					<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+				</div>
+
+				<div id="caixa2" class="caixa-servicos">
+					<h3>Branding</h3>
+					<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+				</div>
+
+				<div id="caixa3" class="caixa-servicos">
+					<h3>Consultation</h3>
+					<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+				</div>
+
+				<div id="caixa4" class="caixa-servicos">
+					<h3>Promises</h3>
+					<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+				</div>
+			</div>
+		</section>
+
+		<!--*** PLANOS ***-->
+		<section id="planos">
+			<h2 class="t-sessao">Preço dos Planos</h2>
+
+			<div class="planos">
+				<div id="plano1" class="plano">
+					<h3 class="t-plano">Básico</h3>
+					<p><strong>10GB</strong> Storage</p>
+					<p><strong>10</strong> Emails</p>
+					<p><strong>10</strong> Domínios</p>
+					<p><strong>Suporte</strong> Vitalício</p>
+					<p class="preço">
+						$ 10<br>
+						<span class="periodo">por mês</span>
+					</p>
+					<p class="bt-preço"><a href="#">Sign Up</a></p>
+				</div>
+
+				<div id="plano2" class="plano">
+					<h3 class="t-plano">Pro</h3>
+					<p><strong>10GB</strong> Storage</p>
+					<p><strong>10</strong> Emails</p>
+					<p><strong>10</strong> Domínios</p>
+					<p><strong>Suporte</strong> Vitalício</p>
+					<p class="preço">
+						$ 10<br>
+						<span class="periodo">por mês</span>
+					</p>
+					<p class="bt-preço"><a href="#">Sign Up</a></p>
+				</div>
+
+				<div id="plano3" class="plano">
+					<h3 class="t-plano">Premium</h3>
+					<p><strong>10GB</strong> Storage</p>
+					<p><strong>10</strong> Emails</p>
+					<p><strong>10</strong> Domínios</p>
+					<p><strong>Suporte</strong> Vitalício</p>
+					<p class="preço">
+						$ 10<br>
+						<span class="periodo">por mês</span>
+					</p>
+					<p class="bt-preço"><a href="#">Sign Up</a></p>
+				</div>
+			</div>
+		</section>
+
+		<!--*** SOBRE ***-->
+		<section id="sobre">
+			<h2 class="t-sessao">Quem Nós Somos</h2>
+
+			<div class="pessoas">
+
+				<div class="pessoa">
+					<div class="moldura-p">
+						<img src="img/pessoa1.jpg">
+					</div>
+					<h3 style="text-align: left;">Jane Doe</h3>
+					<span>CEO & Founder</span>
+					<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+
+					<p class="bt-pessoa"><a href="#">Contact</a></p>
+				</div>
+
+				<div class="pessoa">
+					<div class="moldura-p">
+						<img src="img/pessoa2.jpg">
+					</div>
+					<h3>Mike Ross</h3>
+					<span>CEO & Founder</span>
+					<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+
+					<p class="bt-pessoa"><a href="#">Contact</a></p>
+				</div>
+
+				<div class="pessoa">
+					<div class="moldura-p">
+						<img src="img/pessoa3.jpg">
+					</div>
+					<h3>John Doe</h3>
+					<span>CEO & Founder</span>
+					<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+
+					<p class="bt-pessoa"><a href="#">Contact</a></p>
+				</div>
+				
+			</div>
+		</section>
+
+		<!--*** CONTATO ***-->
+		<section id="contato">
+			<h2 class="t-sessao">Contate-nos</h2>
+			
+			<form>
+				<label>Nome</label>
+				<input class="input" type="text">
+				<br>
+				<label>Email</label>
+				<input class="input" type="email">
+				<br>
+				<label>Mensagem</label>
+				<input class="input" type="text" placeholder="Escreva sua mensagem aqui..."></input>
+				<br>
+				<button class="bt-enviar">Enviar</button>
+			</form>
+		</section>
+
+	</div>
+
+	<!--- ***** RODAPÉ ***** -->
+	<footer>
+		<div class="container">
+			<a href="#cabeçalho">Ir para o topo</a>
+			<br>
+			<p>Direitos reservados - Milena Sousa</p>
+		</div>
+	</footer>
+
+</body>
+</html>

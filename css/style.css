@@ -1,0 +1,331 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	line-height: 1.5;
+	font-family: "Lato", sans-serif;
+	font-size: 14px;
+}
+
+/********** HEADER **********/
+.container{
+	width: 1100px;
+	margin: 0 auto;
+}
+
+/*Menu*/
+ul{
+	list-style: none;
+	display: flex;
+	flex-grow: 1;
+	justify-content: space-around;
+}
+
+ul li a{
+	text-decoration: none;
+	padding: 16px 100px;
+	color: #000;
+	font-size: 18px;
+}
+
+ul li a:hover{
+	background-color: #afafaf;
+}
+
+nav{
+	display: flex;
+	padding: 12px 2em;
+	background-color: #e8e8e8;
+	position: fixed;
+	width: 100%;
+}
+
+@media all and (max-width: 1060px){
+	ul li a{
+		padding: 12px 0;
+	}
+
+	ul li a:hover{
+		background-color: #e8e8e8;
+	}
+}
+
+/*SlideShow*/
+#slideShow{
+	width: 100%;
+	overflow: hidden;
+	padding: 20px 0;
+}
+
+#slideShow img {
+	width: 100%;
+}
+
+.t-top{
+	padding: 70px 0 0 0;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 1.5;
+}
+
+.ponto{
+	height: 15px;
+	width: 15px;
+	background-color: blue;
+}
+
+@media all and (max-width: 1150px){
+	.container{
+		width: 890px;
+	}
+}
+
+@media all and (max-width: 910px){
+	.container{
+		width: 690px;
+	}
+}
+
+@media all and (max-width: 710px){
+	.container{
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 500px){
+	.container{
+		width: 320px;
+	}
+}
+
+
+/********** MAIN **********/
+section{
+	margin: 0 auto;
+	text-align: center;
+}
+
+.t-sessao{
+	text-align: center;
+	font-size: 24px;
+	font-weight: normal;
+	border-bottom: 5px solid #616161;
+	display: inline-block;
+	margin: 80px 0 25px 0;
+	padding: 15px;
+}
+
+/*Serviços*/
+.opcoes{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 20px 0;
+}
+
+.caixa-servicos{
+	flex: 1;
+	padding: 10px 0;
+	text-align: left;
+}
+
+.caixa-servicos h3, p{
+	padding: 20px;
+}
+
+.caixa-servicos h3{
+	font-size: 22px;
+	padding-bottom: 0px;
+}
+
+#caixa1{
+	background-color: #eaeaea;
+	color: #070707;
+}
+
+#caixa2{
+	background-color: #a0a0a0;
+	color: #070707;
+}
+
+#caixa3{
+	background-color: #4f4f4f;
+	color: #fff;
+}
+
+#caixa4{
+	background-color: #070707;
+	color: #fff;
+}
+
+/*Planos*/
+.planos{
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 20px auto;
+	justify-content: space-around;
+}
+
+.plano{
+	margin: 20px auto;
+}
+
+.plano p{
+	display: block;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.periodo{
+	text-align: center;
+}
+
+.plano:hover{
+	box-shadow: 1px 1px 5px #828282;
+}
+
+#plano1 h3{
+	background-color: #111111;
+	display: inline-block;
+	padding: 30px 148px;
+	color: #fff;
+}
+
+#plano2 h3{
+	background-color: #4f4f4f;
+	display: inline-block;
+	padding: 30px 148px;
+	color: #fff;
+}
+
+#plano3 h3{
+	background-color: #111111;
+	display: inline-block;
+	padding: 30px 148px;
+	color: #fff;
+}
+
+.planos p{
+	border: 0.1px solid #e2e2e2;
+
+}
+
+.preço{
+	font-size: 28px;
+	font-weight: 600;
+}
+
+.periodo{
+	font-size: 14px;
+	font-weight: normal;
+	color: #9b9b9b;
+}
+
+.bt-preço a{
+	padding: 15px 50px;
+	background-color: #329b15;
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+}
+
+/*Sobre nós*/
+.pessoas{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.pessoa{
+	margin: 15px auto;
+	width: 330px;
+	box-shadow: 1px 1px 5px #bfbfbf;
+}
+
+.pessoa h3{
+	font-size: 24px;
+	text-align: 
+}
+
+.moldura-p{
+	width: 330px;
+	overflow: hidden;	
+}
+
+.moldura-p img{
+	width: 100%;
+}
+
+.pessoa h3, span, p{
+	display: block;
+	margin: none;
+	text-align: left;
+	padding: 8px 12px;
+}
+
+.pessoa span{
+	font-size: 14px;
+	color: #6b6b6b;
+}
+
+.bt-pessoa a{
+	margin: 15px 0;
+	padding: 15px 40%;
+	background-color: #e8e8e8;
+	display: inline-block;
+	text-decoration: none;
+	color: #000;
+}
+
+/*Contato*/
+#contato{
+	padding-bottom: 100px;
+}
+
+.input{
+	width: 100%;
+	height: 30px;
+	text-align: left;
+	display: block;
+}
+
+label{
+	text-align: left;
+	display: block;
+}
+
+.bt-enviar{
+	width: 100%;
+	background-color: #000;
+	color: #fff;
+	height: 35px;
+	border-style: none;
+}
+
+form{
+	padding: 5px;
+}
+
+/********** RODAPÉ **********/
+footer{
+	background-color: #d1d1d1;
+	height: 110px;
+	text-align: center;
+	padding: 50px 0;
+}
+
+footer p{
+	display: inline-block;
+	color: #4f4f4f;
+	font-size: 12px;
+}
+
+footer a{
+	display: inline-block;
+	margin-bottom: 50px;
+	padding: 20px 40px;
+	background-color: #000;
+	color: #fff;
+	text-decoration: none;
+}
